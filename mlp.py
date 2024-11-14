@@ -368,7 +368,7 @@ class Dropout(Transform):
             x=x*self.mask
             self.out=x
         else:
-            self.out=self.x *self.p
+            self.out=self.x
         return self.out
 
     def backward(self, grad_wrt_out):
